@@ -1,7 +1,7 @@
 # ARRAY i JavaScript
 
-[Source code](https://github.com/chriskodehub/KH-7_det-norske-flagget)  
-[Live demo](https://chriskodehub.github.io/KH-7_det-norske-flagget/)
+[Source code](https://github.com/chriskodehub/KH-8_array-i-javascript)  
+[Live demo](https://chriskodehub.github.io/KH-8_array-i-javascript/)
 
 ## Oppgave 1
 
