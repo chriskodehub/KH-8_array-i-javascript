@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 1</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin:0 20px;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            text-align: center;
+        }
+        a {font-size: 1.5rem;}
+    </style>
+</head>
+
+<body>
+
+    <div class="container">All results in console</div>
+    <a href="oppgave-1.html">Oppgave 1</a>
+    <a href="oppgave-2.html">Oppgave 2</a>
+    <script>
+        const car = [
+            "doors",
+            "steering wheel",
+            "driver seat",
+            "brakes",
+            "wheels",
+            "horn",
+            "engine",
+            "wipers",
+            "fuel",
+            "lights"];
+
+        // add a person to the start of the array
+        show('car.unshift("Driver")');
+
+        // remove the person, and add them on top of the driver's seat 
+        // (the index above the index of the driver's seat)
+        show('car.splice(car.indexOf("driver seat"), 0, car.shift())');
+
+        // remove the element in position 7
+        show('car.splice(6, 1)') ;
+
+        // add a crow at the end of the array
+        show('car.push("crow")');
+
+        // remove it again
+        show('car.pop("crow")');
+
+        // show result in console
+        function show(fun) {
+            console.log(`---\nPERFORMED OPERATION:\n${fun}\n---`)
+            eval(fun);
+            console.log([...car]);
+        }
+    </script>
+</body>
+
+</html>

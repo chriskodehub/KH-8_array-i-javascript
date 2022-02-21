@@ -41,4 +41,5 @@ console.log(x)
 
 ## Result
 
-![Result](img/result.png)
+![Result](img/result1.png)
+![Result](img/result2.png)
